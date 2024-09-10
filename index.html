@@ -3,11 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paneles sandwich</title>
+    <title>Paneles Sandwich</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .info-section {
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .info-section h2 {
+            margin-bottom: 15px;
+        }
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .info-item img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .info-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .info-item:nth-child(even) img {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Hola 1111</h1>
-    
+    <div class="container">
+        <div class="header text-center py-5">
+            <h1 class="display-4 font-weight-bold">Paneles Sandwich</h1>
+            <p class="lead">Información y venta de paneles sandwich de alta calidad</p>
+        </div>
+        
+        
+        <div class="info-section">
+            <h2 class="text-center mb-4">Todo tipo de paneles sandwich</h2>
+            <div class="info-item">
+                <img src="1.jpg" alt="Imagen 1" class="img-fluid rounded-circle">
+                <div>
+                    <h5>Ventas de paneles sandwich</h5>
+                    <p>Ofrecemos una amplia variedad de paneles sandwich para diferentes aplicaciones. Nuestros productos son de alta calidad y están disponibles a precios competitivos.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="2.jpg" alt="Imagen 2" class="img-fluid rounded-circle">
+                <div>
+                    <h5>Todo tipo de paneles de sandwich</h5>
+                    <p>Desde paneles aislantes hasta paneles decorativos, tenemos todo lo que necesitas para tus proyectos. Consulta nuestro catálogo para encontrar el panel perfecto para ti.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="3.jpg" alt="Imagen 3" class="img-fluid rounded-circle">
+                <div>
+                    <h5>Instalación de paneles sandwich</h5>
+                    <p>Nuestro equipo de expertos ofrece servicios de instalación profesional para garantizar que tus paneles sandwich se instalen correctamente y de manera eficiente.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="4.jpeg" alt="Imagen 4" class="img-fluid rounded-circle">
+                <div>
+                    <h5>Ventas a precio de fábrica</h5>
+                    <p>Compra directamente de fábrica y ahorra en tus proyectos. Ofrecemos precios competitivos y descuentos por volumen para grandes pedidos.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="info-section">
+            <h2>Los mejores precios del mercado</h2>
+            <p>Ofrecemos paneles sandwich de alta calidad a los mejores precios del mercado. Nuestra fiabilidad y compromiso con la satisfacción del cliente nos distingue. ¡Pregunte sin compromiso!</p>
+        </div>
+        
+        <hr>
+    </div>
+
+    <footer>
+        <p>Contacto: info@panelessandwich.com | Teléfono: +34 123 456 789</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
